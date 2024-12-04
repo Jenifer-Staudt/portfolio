@@ -47,9 +47,10 @@ nav ul {
     background-color: #ffaec9;
     display: flex;
     justify-content: center;
-    list-style: none; /* Remove bullets */
+    list-style: none; 
     padding: 10px;
     margin: 0;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
 }
 
 nav ul li {
@@ -65,24 +66,33 @@ nav ul li a {
     border-radius: 5px; /* Bordas arredondadas */
 }
 
-/* Estilo do item ativo no menu */
-nav ul li a.ativo {
-    background-color: #ffccd5; /* Cor de fundo mais suave para o item ativo */
-    color: #333; /* Cor do texto mais suave */
-    font-weight: normal; /* Retirando o negrito para um efeito mais leve */
-    border-radius: 5px; /* Bordas arredondadas */
-}
-
 /* Efeito hover nos links do menu */
 nav ul li a:hover {
     background-color: #ffccd5;
     color: #333;
 }
 
-/* Evita que o item ativo seja afetado pelo efeito hover */
-nav ul li a.ativo:hover {
-    background-color: #ffccd5;
-    color: #333;
+/* Destaque para o menu ativo */
+nav ul li a.ativo {
+    background-color: #ff8ba7;  /* Cor mais suave */
+    color: #fff;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Alinha os itens do menu verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona margem entre os itens quando estiverem na coluna */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+        padding: 10px; 
+    }
 }
 
 /* Conteúdo principal */
@@ -90,14 +100,14 @@ main {
     max-width: 800px; /* Limita a largura */
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+    background-color: rgba(255, 255, 255, 0.9); 
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 main h1 {
     font-size: 32px;
-    color: #ff7f94; /* Cor de destaque */
+    color: #ff7f94; 
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -105,12 +115,12 @@ main h1 {
 
 main p {
     font-size: 16px;
-    line-height: 1.6; /* Melhora a legibilidade */
+    line-height: 1.6; 
 }
 
 /* Estilo das tabelas */
 table {
-    width: 100%; /* Ocupa toda a largura disponível */
+    width: 100%; 
     border-collapse: collapse;
     margin-top: 20px;
     font-size: 1em;
