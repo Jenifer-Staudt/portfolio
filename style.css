@@ -1,0 +1,205 @@
+/* Reset básico para garantir consistência entre navegadores */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Configuração geral do fundo para toda a página */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilo do fundo */
+body.sobre-mim, body.formacao, body.portfolio, body.contato {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url('pexels-marek-piwnicki-3907296-16214725.jpg');
+}
+
+/* Seção principal com destaque */
+.hero {
+    background-color: rgba(255, 204, 213, 0.9); /* Fundo semitransparente */
+    color: #333; /* Texto escuro para contraste */
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffaec9; /* Linha de destaque */
+}
+
+/* Título e subtítulo dentro da seção principal */
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Navegação principal */
+nav ul {
+    background-color: #ffaec9;
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Remove bullets */
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito hover nos links do menu */
+nav ul li a:hover {
+    background-color: #ffccd5;
+    color: #333;
+}
+
+/* Estilo para o item do menu ativo */
+nav ul li a.ativo {
+    color: #ff7f94;              
+    font-weight: normal;         
+    border-bottom: 2px solid #ff7f94; 
+    padding-bottom: 3px;         
+    transition: border-bottom 0.3s ease;  
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px; /* Limita a largura */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+main h1 {
+    font-size: 32px;
+    color: #ff7f94; /* Cor de destaque */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+/* Estilo das tabelas */
+table {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+table th, table td {
+    border: 1.5px solid #ffccd5;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ffaec9;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+table td {
+    background-color: #fff5f7;
+    color: #333;
+}
+
+/* Efeito hover nas linhas da tabela */
+table tr:hover td {
+    background-color: #ffe6eb;
+    transition: background-color 0.3s ease;
+}
+
+/* Centraliza títulos das seções */
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8em;
+    color: #ff6b81;
+    font-weight: bold;
+}
+
+/* Texto de boas-vindas */
+.welcome-text {
+    text-align: center;
+    font-size: 0.9em;
+    color: #000;
+    margin: 15px 0;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+/* Estilo para formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre elementos */
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #ff7f94;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ffaec9;
+    border-radius: 5px;
+    background-color: #fff5f7;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ff7f94;
+    box-shadow: 0 0 5px rgba(255, 127, 148, 0.5);
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff7f94;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffaec9;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffaec9;
+    color: white;
+    margin-top: 20px;
+}
