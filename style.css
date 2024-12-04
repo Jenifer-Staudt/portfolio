@@ -28,8 +28,6 @@ body.sobre-mim, body.formacao, body.portfolio, body.contato {
     padding: 50px 20px;
     text-align: center;
     border-bottom: 5px solid #ffaec9; /* Linha de destaque */
-    flex-wrap: wrap;  /* Permite que os itens do menu quebrem para uma nova linha em telas pequenas */
-
 }
 
 /* Título e subtítulo dentro da seção principal */
@@ -67,19 +65,24 @@ nav ul li a {
     border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilo do item ativo no menu */
+nav ul li a.ativo {
+    background-color: #ffccd5; /* Cor de fundo mais suave para o item ativo */
+    color: #333; /* Cor do texto mais suave */
+    font-weight: normal; /* Retirando o negrito para um efeito mais leve */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
 /* Efeito hover nos links do menu */
 nav ul li a:hover {
     background-color: #ffccd5;
     color: #333;
 }
 
-/* Estilo para o item do menu ativo */
-nav ul li a.ativo {
-    color: #ff7f94;              
-    font-weight: normal;         
-    border-bottom: 2px solid #ff7f94; 
-    padding-bottom: 3px;         
-    transition: border-bottom 0.3s ease;  
+/* Evita que o item ativo seja afetado pelo efeito hover */
+nav ul li a.ativo:hover {
+    background-color: #ffccd5;
+    color: #333;
 }
 
 /* Conteúdo principal */
